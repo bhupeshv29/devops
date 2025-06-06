@@ -20,4 +20,10 @@ jobs:
             username: ubuntu
             key: ${{ secrets.SSH_PVT }}
             port: 22
-            script: whoami
+            script: |
+                cd devops
+                cd next
+                git pull
+                pnpm install
+                pnpm run build
+                pnpm run start
