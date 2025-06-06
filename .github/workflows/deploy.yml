@@ -16,7 +16,7 @@ jobs:
       - name: Execute remote SSH commands using password
         uses: appleboy/ssh-action@v1
         with:
-          host:  ubuntu@13.233.139.48
+          host:  13.233.139.48
           password: ${{ secrets.SSH_PVT }}
           port: 22
           script: whoami 
