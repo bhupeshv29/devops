@@ -13,11 +13,11 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
-      - name: Execute remote SSH commands using password
+      - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1
         with:
-          host:  13.233.139.48
-          username: ubuntu
-          password: ${{ secrets.SSH_PVT }}
-          port: 22
-          script: whoami 
+            host: 13.233.139.48
+            username: ubuntu
+            key: ${{ secrets.SSH_PVT }}
+            port: 22
+            script: whoami
