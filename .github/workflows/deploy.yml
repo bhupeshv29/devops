@@ -17,7 +17,6 @@ jobs:
         uses: appleboy/ssh-action@v1
         with:
           host:  ubuntu@13.233.139.48
-          username: linuxserver.io
           password: ${{ secrets.SSH_PVT }}
           port: 22
           script: whoami 
