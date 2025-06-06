@@ -3,12 +3,12 @@
 export default async function Home() {
 
   return (
-   <div>hii
+
 
     <div>
 
-      finally run the devops part
+    finally done 
     </div>
-   </div>
+
   );
 }
