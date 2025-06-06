@@ -25,5 +25,5 @@ jobs:
                 cd devops
                 cd next
                 git pull
-                npm run i
+                npm i
                 npm run dev
