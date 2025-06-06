@@ -25,5 +25,4 @@ jobs:
                 cd next
                 git pull
                 pnpm install
-                pnpm run build
-                pnpm run start
+                pnpm run dev
